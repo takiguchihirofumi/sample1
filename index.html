@@ -29,6 +29,17 @@
       max-width: 100%;
       height: auto;
     }
+    .scroll-image {
+      animation: scrollUpDown 3s ease-in-out infinite alternate;
+    }
+    @keyframes scrollUpDown {
+      from {
+        transform: translateY(0);
+      }
+      to {
+        transform: translateY(40px);
+      }
+    }
     h1 {
       color: #2d3e50;
       margin-bottom: 1rem;
@@ -61,7 +72,7 @@
 </head>
 <body>
   <div class="container">
-    <img src="https://openclipart.org/image/400px/svg_to_png/181722/stock.png" alt="株のイメージ" style="width:180px; margin-bottom: 1.5rem;">
+    <img src="https://openclipart.org/image/400px/svg_to_png/181722/stock.png" alt="株のイメージ" class="scroll-image" style="width:180px; margin-bottom: 1.5rem;">
     <h1>株勉強会</h1>
     <p>2025年テーマ下部の勉強会です。</p>
   </div>
